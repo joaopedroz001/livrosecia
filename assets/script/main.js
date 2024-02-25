@@ -130,6 +130,7 @@ function postForm() {
         };
         
         localStorage.setItem(`${nextID}`, JSON.stringify(object))
+        location.reload();
     }
 }
 
