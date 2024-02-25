@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros & Cia</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/listing_style.css">
+    <link rel="stylesheet" href="../assets/styles/search_style.css">
+    <link rel="stylesheet" href="../assets/styles/vars.css">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <script src="https://kit.fontawesome.com/8e06853284.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="div-logo">
+            <a href="../index.html" class="link-logo">
+                <img src="../assets/images/icon.png" width="70px" class="img">Livros & Cia
+            </a>
+        </div>
+        <nav class="menu">
+            <ul class="list">
+                <li class="nav-buttons">
+                    <a href="sign_up.html" class="link-buttons" id="sign-up">Cadastro</a>
+                </li>
+                <li class="nav-buttons">
+                    <a href="listing.html" class="link-buttons" id="listing">Listagem</a>
+                </li>
+                <li class="nav-buttons">
+                    <a href="search.html" class="link-buttons" id="search">Busca</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h2 class="h2-title">Busca</h2>
+            <div class="search-div" onclick="showBook()">
+                <input type="text" name="searchBook" class="search-book" placeholder="Insira o nome do livro...">
+                <button class="search-button"><i class="fa-solid fa-2x fa-magnifying-glass" id="search-icon"></i></button>
+            </div>
+            <main>
+                <table class="table-page-list">
+                    <thead>
+                        <tr>
+                            <th id="table-name">Nome</th>
+                            <th id="table-autor">Autor</th>
+                            <th id="table-category">Categoria</th>
+                            <th id="table-publiYear">Ano de Publicação</th>
+                            <th id="table-price">Preço (R$)</th>
+                            <th>Opções</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </main>
+            <div class="without-book-container">
+                <div class="without-book">
+                    <img src="../assets/images/books.png" alt="" id="books">
+                    <img src="../assets/images/not-found.png" alt="" id="not-found">
+                </div>
+                <div class="without-book-warning-div">
+                    <p class="without-book-warning"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="../assets/script/main.js"></script>
+    <script src="../assets/script/edit_script.js"></script>
+    <script src="../assets/script/search_script.js"></script>
+</body>
+</html>

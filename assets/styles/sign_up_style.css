@@ -1,0 +1,71 @@
+label {
+    font-size: 20px;
+    font-family: var(--font-Lora);
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+
+input, select {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    padding: 2px;
+}
+
+#bookName, #autorName, #category {
+    width: 410px;
+}
+
+#category {
+    height: 30px;
+    font-size: 15px;
+}
+
+#publiYear {
+    width: 57px;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+#price {
+    width: 95px;
+}
+
+.input {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px;
+}
+
+#submit-button {
+    background-color: #0e9bb4;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: var(--font-Ubuntu);
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+    width: 410px;
+    margin-top: 10px;
+    transition: background-color .8s;
+}
+
+#submit-button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#main-sign_up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+}
+
+.error {
+    border-color: red;
+}
+
+.confirm {
+    border-color: #0dda0d;
+}

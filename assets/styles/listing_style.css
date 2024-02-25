@@ -1,0 +1,73 @@
+#container-listing-page {
+    padding: 125px;
+}
+
+tr, td {
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+th {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #0e9bb4;
+}
+
+td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr {
+    height: 39px;
+}
+
+#table-name {
+    width: 50%;
+}
+
+#books {
+    width: 300px;
+}
+
+#not-found {
+    position: absolute;
+    width: 280px;
+}
+
+.without-book-warning {
+    font-family: var(--font-Ubuntu);
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+.hiddenElement {
+    display: none;
+}
+
+.td-buttons {
+    margin-left: 5px;
+}
+
+.table-button {
+    margin: 2px;
+    border: none;
+    background-color: transparent;
+}
+
+.table-button:hover {
+    color: #5f5f5f;
+}
+
