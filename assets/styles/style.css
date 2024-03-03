@@ -97,4 +97,9 @@ body {
 
 footer {
     height: 100px;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    font-family: var(--font-Ubuntu);
+    color: #fff;
 }
