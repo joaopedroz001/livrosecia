@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8e06853284.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Livros & Cia</title>
+  </head>
+  <body class="h-100 d-flex flex-column align-items-center">
+    <header class="d-flex justify-content-between w-100 mb-4 p-2">
+      <div class="h-100">
+        <a href="../../index.html" class="d-flex h-100 align-items-center">
+          <img src="../image/icon.png" alt="Logo" class="logo mx-2">
+          <p class="m-auto px-2 text-logo">Livros & Cia</p>
+        </a>
+      </div>
+      <nav>
+        <button type="button" class="hamburger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </button>
+        <ul class="nav-list align-items-center">
+          <li class="list-unstyled">
+            <a href="./register-book.html" class="nav-button" id="register">Registro</a>
+          </li>
+          <li class="list-unstyled">
+            <a href="./list-book.html" class="nav-button" id="list">Listagem</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container m-auto">
+      <div class="p-4 d-flex flex-column align-items-center main-div">
+        <h1 class="main-text text-center mb-4 fw-bold">Lista de livros</h1>
+
+        <div class="form-floating mb-3 px-2 w-100">
+          <input type="text" class="form-control searchBook" oninput="showBook()" id="floatingInput" placeholder="" autocomplete="off">
+          <label class="px-3" for="floatingInput">Nome do livro</label>
+        </div>
+
+        <div class="row w-100 justify-content-center"></div>
+      
+        <div class="book-not-found-warning">
+          <div class="d-flex justify-content-center my-3">
+            <img src="../image/book.png" alt="Book" class="book">
+            <img src="../image/not-found.png" alt="Not found" class="not-found position-absolute">
+          </div>
+          <p class="text-danger fw-bold text-center mb-0">Livro não encontrado</p>
+        </div>
+      </div>
+    </main>
+    <footer class="w-100 mt-4">
+      <p class="text-center mb-0 p-4">&copy; JoaoPedroZ001. All Rights Reserved</p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/listing_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu|Lora);
+
+header {
+  background: #000;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.text-logo {
+  font-size: 2rem;
+  color: #fff;
+  text-wrap: nowrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  width: 25%;
+}
+
+.nav-list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-button {
+  color: #0e9bb4;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.nav-button.active,
+.nav-button:hover {
+  color: aqua;
+  border-bottom: 3px solid aqua;
+  padding-bottom: 4px;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  border-radius: 50%;
+  padding: 5px;
+  right: 0;
+  top: 15px;
+  margin-right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background .2s ease-in;
+}
+
+.hamburger:hover {
+  background: #111111;
+}
+
+.hamburger div {
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  position: relative;
+  transition: .5s;
+}
+
+body {
+  background: #f8f0af;
+  font-family: Ubuntu;
+}
+
+main {
+  padding: 0 30px 0 30px !important;
+}
+
+.main-div {
+  max-width: 1000px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.form {
+  max-width: 500px !important;
+}
+
+label::after {
+  background: none !important;
+}
+
+.text-index-page {
+  text-align: justify;
+}
+
+.btn {
+  background: #0e9bb4;
+}
+
+.btn:hover {
+  background: aqua;
+}
+
+.book-not-found-warning {
+  display: none;
+}
+
+.book-not-found-warning.active {
+  display: block !important;
+}
+
+.book {
+  width: 250px;
+}
+
+.not-found {
+  width: 200px;
+}
+
+.book-not-found-warning p {
+  font-size: 1.5rem;
+}
+
+
+footer {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 1330px) {
+  .hamburger {
+    display: block;
+    z-index: 999;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 998;
+    gap: 30px;
+    position: fixed;
+    padding: 90px 20px;
+    transform: translateX(100%);
+    background-color: #000;
+    right: 0;
+    width: 45vw;
+    transition: transform .3s ease-in;
+  }
+
+  .nav-list a {
+    opacity: 0;
+  }
+
+  .nav-list li:nth-child(1) a {
+    transition: .5s .2s;
+  }
+
+  .nav-list li:nth-child(2) a {
+    transition: .5s .4s;
+  }
+
+  .nav-list li:nth-child(3) a {
+    transition: .5s .6s;
+  }
+
+  nav.active .nav-list {
+    transform: translateX(0);
+  }
+
+  nav.active .nav-list a {
+    opacity: 1;
+  }
+
+  nav.active .hamburger .line-1 {
+    transform: rotate(-405deg) translate(-8px, 8px);
+  }
+
+  nav.active .hamburger .line-2 {
+    opacity: 0;
+  }
+
+  nav.active .hamburger .line-3 {
+    transform: rotate(405deg) translate(-5px, -7px);
+  }
+}
