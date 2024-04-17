@@ -94,6 +94,10 @@ main {
   max-width: 500px !important;
 }
 
+.floatingLabel {
+  margin-left: .75rem !important;
+}
+
 label::after {
   background: none !important;
 }
