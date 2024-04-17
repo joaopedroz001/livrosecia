@@ -163,7 +163,7 @@ const listItems = (array = data) => {
 		const editButton = document.createElement('button')
 		editButton.className = 'btn w-50 fa-solid fa-pen-to-square'
 		editButton.onclick = () => {
-			window.location.href = `./src/pages/edit-book.html?key=${i}`
+			window.location.href = `edit-book.html?key=${i}`
 		}
 
 		const deleteButton = document.createElement('button')
